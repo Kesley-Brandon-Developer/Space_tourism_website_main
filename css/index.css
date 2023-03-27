@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('assets/home/background-home-desktop.jpg');
+    background-image: url('../assets/index/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -49,7 +49,7 @@ header {
     width: 65vw;
 }
 
-.menu-format {
+/* .menu-format {
     width: 100vw;
     height: 100vh;
     -webkit-filter: blur(30px) brightness(1.2) contrast(.9);
@@ -57,11 +57,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    left: -35vw;
-    top: -2rem;
+    left: 0vw;
+    top: -44rem;
     z-index: 10;
 
-}
+
+    left: -35vw;
+    top: -2rem;
+
+} */
 
 .menu-itens {
     align-items: center;
@@ -90,6 +94,8 @@ header {
     text-decoration: none;
 }
 
+
+
 .num-menu {
     font-weight: 700;
     margin-right: 0.3rem;
@@ -98,4 +104,62 @@ header {
 .nome-menu {
     opacity: 0.75;
 }
+
+main {
+    padding: 7vw 7vw 0;
+}
+
+.container {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.parte-texto {
+    width: 31vw;
+}
+
+.title-top {
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.title-princ {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9rem;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.text {
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 15rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    place-items: center;
+    width: 15rem;
+}
+
+
 
