@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 5vw;
+}
+
+.menu-line {
+    background-color: grey;
+    height: 2px;
+    width: 31vw;
+    transform: translateX(2vw);
+    opacity: .3;
+    z-index: 15;
+}
+
+
+
