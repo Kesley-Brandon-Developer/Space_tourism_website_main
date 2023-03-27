@@ -102,20 +102,30 @@ header {
 }
 
 .destiny {
-    color: var(--Text);
     cursor: pointer;
+    font-size: 20px;
     display: flex;
     font-family: var(--TitleFont);
     justify-content: space-between;
     list-style: none;
     margin-left: 48%;
     width: 30%;
+    padding-bottom: 40px;
 }
 
 .destiny-click {
     border-bottom: 3px solid white;
-    color: white;
     padding-bottom: 0.6rem;
+}
+
+.destiny-click .link-destiny {
+    color: white;
+    font-size: 23px;
+}
+
+.link-destiny {
+    color: var(--Text);
+    text-decoration: none;
 }
 
 .destination-container {

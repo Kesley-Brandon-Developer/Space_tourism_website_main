@@ -11,41 +11,36 @@
     --Text: #9ba6b6;
 }
 
-
-
 * {
     padding: 0px;
     margin: 0px;
     color: white;
 }
 
-
 body {
-    background-image: url('../assets/index/background-home-desktop.jpg');
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-
 header {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
 }
 
 .logo {
-    height: 5vw;
     width: 5vw;
 }
 
 .menu-line {
-    background-color: var(--Text);
+    background-color: grey;
     height: 2px;
-    opacity: .3;
-    transform: translateX(2vw);
     width: 31vw;
+    transform: translateX(2vw);
+    opacity: .3;
     z-index: 15;
 }
 
@@ -95,75 +90,99 @@ header {
     opacity: 0.75;
 }
 
-main {
-    padding: 7vw 7vw 0;
-}
-
-.container {
-    align-items: flex-end;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    position: relative;
-}
-
-.parte-texto {
-    width: 31vw;
+.container-full {
+    padding: 7vw 7vw 0px;
 }
 
 .title-top {
-    color: var(--Text);
-    font-family: var(--TitleFont);
-    font-weight: 400;
-    letter-spacing: .3rem;
-    margin-bottom: 0;
-    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: large;
+    font-weight: 500;
+    font-family: var(--TextFont);
 }
 
-.title-princ {
+.destiny {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    font-family: var(--TitleFont);
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 48%;
+    width: 30%;
+    padding: 40px;
+}
+
+.destiny-click {
+    border-bottom: 3px solid white;
+    padding-bottom: 0.6rem;
+}
+
+.destiny-click .link-destiny {
+    color: white;
+    font-size: 23px;
+}
+
+.link-destiny {
+    color: var(--Text);
+    text-decoration: none;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinationImage {
+    height: 35vw;
+    width: 35vw;
+}
+
+.destination-info {
+    width: 48%;
+}
+
+.destiny-name {
     font-family: var(--HeadingFont);
-    font-size: 9rem;
-    font-weight: 400;
+    font-size: 7rem;
     margin: 0;
     text-transform: uppercase;
 }
 
-.text {
+.destiny-text {
+    border-bottom: 2px solid hsla(0, 0%, 39%, .3);
+    color: var(--Text);
+    font-family: var(--TextFont);
+    font-size: 1.45rem;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+    padding-bottom: 5rem;
+}
+
+.more-info {
+    display: flex;
+}
+
+.title-info {
     color: var(--Text);
     font-family: var(--TextFont);
     font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-    margin-bottom: 0;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
 }
 
-.circle {
-    background-color: white;
-    border-radius: 50%;
-    color: black;
-    display: grid;
-    font-family: var(--HeadingFont);
-    font-size: 2rem;
-    font-weight: 400;
-    height: 15rem;
-    letter-spacing: .1rem;
-    margin: 0;
-    place-items: center;
-    width: 15rem;
+.distance-info {
+    color: white!important;
+    font-family: var(--TextFont);
+    font-size: 2rem!important;
+    margin-bottom: 3rem;
+    margin-right: 3.5rem;
 }
 
-/* Mobile */
-
-/* @media all and (max-width: 1100px){
-    
-    header {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-transform: uppercase;
-    }
-} */
-
-
-
+.travel-time {
+    color: white!important;
+    font-family: var(--TextFont);
+    font-size: 2rem!important;
+    margin-bottom: 3rem;
+    margin-right: 3.5rem;
+}
