@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/crew_commander.css">
 </head>
 <body>
-    <!-- <div id="root"> -->
+    <div id="root">
 
         <header>
             <img src="../assets/shared/logo.svg" class="logo" alt="Logo">
@@ -43,58 +43,69 @@
                 </div> 
             </div>
         </header>
+
+
+        <!-- Começo do Main -->
+
+
         <main>
-            
-            <div class="slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Radio Buttons -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!-- Fim Radio Buttons -->
+                
+                        <div style="padding-top: -10vw; padding-left: 2vw; margin-bottom: 2rem; letter-spacing: 0.3rem; width: 380px; color: white; font-weight: lighter; font-size: 1.3rem; font-family: var(--HeadingFont);">
+                            <span style="color: var(--Text); font-size: 1.3rem; font-weight: lighter;">02</span>
+                            MEET YOUR CREW
+                        </div>
+                        <div class="descript">
+                            <div class="info">
+                                <div style="transform: translateX(0%);">
+                                    <div class="role">Commander</div>
+                                    <div class="name">Douglas Hurley</div>
+                                    <div class="bio">
+                                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="slides">
-                    <!-- Radio Buttons -->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!-- Fim Radio Buttons -->
-                    
-                    <p>Oi</p>
-
-                    <!-- Slide Images -->
-                    <div class="slide first">
-                        <img src="../assets/crew/image-douglas-hurley.webp" alt="Commander">
+                        <!-- Slide Images -->
+                        <div class="slide first">
+                            <img src="../assets/crew/image-douglas-hurley.webp" alt="Commander">
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/crew/image-mark-shuttleworth.webp" alt="Specialist">
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/crew/image-victor-glover.webp" alt="Pilot">
+                        </div>
+                        <div class="slide">
+                            <img src="../assets/crew/image-anousheh-ansari.webp" alt="Engineer">
+                        </div>
+                        <!-- Fim Slide Images -->
+                        <!-- Navigation auto -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="../assets/crew/image-mark-shuttleworth.webp" alt="Specialist">
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"><a href="../pages/crew_engineer.html"></a></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
                     </div>
-                    <div class="slide">
-                        <img src="../assets/crew/image-victor-glover.webp" alt="Pilot">
-                    </div>
-                    <div class="slide">
-                        <img src="../assets/crew/image-anousheh-ansari.webp" alt="Engineer">
-                    </div>
-                    <!-- Fim Slide Images -->
-    
-                    <!-- Navigation auto -->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-    
-    
                 </div>
-    
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            </div>
-
-
-            
         </main>
     </div>
+    
     <script src="crew_commander.js"></script>
 </body>
 </html>

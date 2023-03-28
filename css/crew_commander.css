@@ -103,7 +103,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
+
 
 .slider {
     margin: 0 auto;
@@ -122,11 +124,54 @@ main {
     display: none;
 }
 
+.descript {
+    display: flex;
+    height: calc(100vh - 9vw - 11.5rem);
+    position: absolute;
+    left: 50px;
+    top: 380px;
+}
+
+.role {
+    font-family: var(--HeadingFont);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--Text);
+}
+
+.name {
+    color: white;
+    font-family: var(--HeadingFont);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.bio {
+    color: var(--Text);
+    font-family: var(--TextFont);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    width: 42vw;
+}
+
+.info {
+    display: flex;
+    margin-left: 5vw;
+    order: 2;
+    overflow: hidden;
+    width: 42vw;
+}
+
 .slide {
     width: 25%;
     position: relative;
-    transition: 2s;
-    left: 900px;
+    transition: 0s;
+    left: 480px;
     bottom: 0px;
 }
 
